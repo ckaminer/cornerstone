@@ -49,6 +49,10 @@
     > :last-child {
         margin-bottom: 0;
     }
+
+    a {
+        text-decoration: none;
+    }
 }
 
 .footer-info-col--small {
@@ -101,6 +105,7 @@
         // scss-lint:disable NestingDepth
         &:hover {
             color: stencilColor("color-textSecondary--hover");
+            text-decoration: none;
         }
         // scss-lint:enable NestingDepth
     }
@@ -166,3 +171,12 @@
 .footer-newsletter-summary {
     text-align: left;
 }
+
+/*==========ct style start===========*/
+.card-figure:hover{
+  .card-figcaption-body{
+      display:none;
+  }
+}
+
+/*==========ct style start===========*/

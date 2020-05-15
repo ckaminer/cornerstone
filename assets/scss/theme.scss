@@ -83,3 +83,21 @@
 @import "layouts/layouts"; // 1
 
 @import "vendor/jstree/style";
+
+/************************ Custom css *****************/
+.banners{
+  background-color: #fff;
+  margin-bottom: 40px;
+  .banner{
+      p{
+          color: #74685c;
+      }
+  }
+}
+
+.form-prefixPostfix .button, .form-prefixPostfix .form-input{
+  width: auto;
+  margin:0 0 0 10px;
+  
+}
+/************************ Custom css end *****************/

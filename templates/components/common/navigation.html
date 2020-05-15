@@ -18,6 +18,11 @@
         <li class="navUser-item">
             <a class="navUser-action navUser-item--compare" href="{{urls.compare}}" data-compare-nav>{{lang 'common.compare'}} <span class="countPill countPill--positive countPill--alt"></span></a>
         </li>
+        <li class="navUser-item">
+            <a onclick="ga('send', 'event', 'Phone Call Tracking', 'Click', 'Header');" class="navUser-action" href="tel:7813156957">
+                {{lang 'footer.call_us' phone_number=settings.phone_number}}
+            </a>
+        </li>
         {{#if theme_settings.social_icon_placement_top}}
             <li class="navUser-item navUser-item--social">
                 {{> components/common/social-links}}

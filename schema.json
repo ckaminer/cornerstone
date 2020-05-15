@@ -708,6 +708,23 @@
         ]
       },
       {
+        "type": "font",
+        "label": "Font family",
+        "id": "logo-font",
+        "options": [
+          {
+            "group": "Oswald",
+            "label": "Oswald",
+            "value": "Google_Oswald_400"
+          },
+          {
+            "group": "Oswald",
+            "label": "Oswald Light",
+            "value": "Google_Oswald_300"
+          }
+        ]
+      },
+      {
         "type": "color",
         "label": "Logo text color",
         "id": "storeName-color"
@@ -858,6 +875,12 @@
         "label": "Show \"&copy;\", current year and store name",
         "force_reload": true,
         "id": "show_copyright_footer"
+      },
+      {
+        "type": "checkbox",
+        "label": "Show newsletter signup in footer",
+        "force_reload": true,
+        "id": "show_newsletter_footer"
       },
       {
         "type": "heading",

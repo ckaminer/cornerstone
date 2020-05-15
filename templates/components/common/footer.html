@@ -70,17 +70,19 @@
             {{/and}}
 
             {{#if settings.address}}
-            <article class="footer-info-col footer-info-col--small" data-section-type="storeInfo">
+            <article class="footer-info-col footer-info-col--small" data-section-type="storeInfo"  itemprop="address" itemscope itemtype="http://schema.org/PostalAddress">
                 <h5 class="footer-info-heading">{{lang 'footer.info'}}</h5>
-                <address>{{nl2br settings.address}}</address>
+                <address itemprop="streetAddress">{{nl2br settings.address}}</address>
                 {{#if settings.phone_number}}
-                    <strong>{{lang 'footer.call_us' phone_number=settings.phone_number}}</strong>
+                    <a onclick="ga('send', 'event', 'Phone Call Tracking', 'Click', 'Footer');" href="tel:7813156957">
+                        <strong itemprop="telephone">{{lang 'footer.call_us' phone_number=settings.phone_number}}</strong>
+                    </a>
                 {{/if}}
             </article>
             {{/if}}
 
             <article class="footer-info-col" data-section-type="newsletterSubscription">
-                {{#if settings.show_newsletter_box}}
+                {{#if theme_settings.show_newsletter_footer}}
                     {{> components/common/subscription-form}}
                 {{/if}}
                 {{> components/common/payment-icons}}

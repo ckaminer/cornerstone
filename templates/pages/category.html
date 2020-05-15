@@ -29,7 +29,6 @@ category:
     <h1 class="page-heading">{{category.name}}</h1>
     {{{region name="category_below_header"}}}
 {{/unless}}
-{{{category.description}}}
 <div class="page">
     {{#if category.faceted_search_enabled}}
         <aside class="page-sidebar" id="faceted-search-container">
@@ -54,6 +53,7 @@ category:
             <p>{{lang 'categories.no_products'}}</p>
         {{/if}}
         {{{region name="category_below_content"}}}
+        {{{category.description}}}
     </main>
 </div>
 

@@ -39,6 +39,7 @@
 }
 
 .header-logo {
+    margin: 1rem auto 1.5rem !important;
     font-size: 0;   // 1
     margin: 0 remCalc($header-toggle-width); // 2
     text-align: center;
@@ -120,7 +121,7 @@
     font-family: $fontFamily-hero;
     font-size: $fontSize-logo-small;   // 1
     font-weight: stencilFontWeight("headings-font");
-    letter-spacing: remCalc(2px);
+    letter-spacing: remCalc(9px);
     margin-left: auto;
     margin-right: auto;
     overflow: hidden;

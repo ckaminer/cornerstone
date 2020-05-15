@@ -2,6 +2,10 @@
 
 ## Draft
 
+## ABC - 4.5.0.0 (2020-05-15)
+- Upgrade theme from 1.11 to 4.5.0
+- Migrate diff from 1.11-edited : 1.11-original into 4.5.0
+
 ## 4.5.0 (2020-03-16)
 - Fixed the check for max length in create account form fields [#1647](https://github.com/bigcommerce/cornerstone/pull/1647)
 - Add region to page.html [#1639](https://github.com/bigcommerce/cornerstone/pull/1639)
