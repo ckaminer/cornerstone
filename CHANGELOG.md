@@ -2,6 +2,9 @@
 
 ## Draft
 
+## ABC - 4.5.0.1 (2020-05-22)
+- Move search result content above the suggestion panel
+
 ## ABC - 4.5.0.0 (2020-05-15)
 - Upgrade theme from 1.11 to 4.5.0
 - Migrate diff from 1.11-edited : 1.11-original into 4.5.0

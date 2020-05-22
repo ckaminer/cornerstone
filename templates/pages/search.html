@@ -59,6 +59,14 @@ product_results:
         </aside>
     {{/if}}
     <main class="page-content">
+        <div id="search-results-content" {{#if forms.search.section '!=' 'content'}}class="u-hiddenVisually"{{/if}}>
+            {{> components/search/content-listing}}
+        </div>
+
+        <div id="product-listing-container" {{#if forms.search.section '!=' 'product'}}class="u-hiddenVisually"{{/if}}>
+            {{> components/search/product-listing}}
+        </div>
+
         {{#if forms.search.has_suggestions}}
             <div class="panel panel--large">
                 <div class="panel-body">
@@ -121,14 +129,6 @@ product_results:
                 </div>
             </div>
         {{/if}}
-
-        <div id="search-results-content" {{#if forms.search.section '!=' 'content'}}class="u-hiddenVisually"{{/if}}>
-            {{> components/search/content-listing}}
-        </div>
-
-        <div id="product-listing-container" {{#if forms.search.section '!=' 'product'}}class="u-hiddenVisually"{{/if}}>
-            {{> components/search/product-listing}}
-        </div>
 
         {{{region name="search_below_content"}}}
     </main>
