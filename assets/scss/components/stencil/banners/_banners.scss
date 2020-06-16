@@ -15,6 +15,18 @@
     color: stencilColor("color-white");
     padding: spacing("half") 0;
     text-align: center;
+    
+    @include breakpoint("xsmall") {
+      margin: spacing("single") 0;
+    }
+    
+    @include breakpoint("small") {
+      margin: spacing("double") 0;
+    }
+
+    @include breakpoint("medium") {
+      margin: 0;
+    }
 
     p:last-child {
         margin-bottom: 0;

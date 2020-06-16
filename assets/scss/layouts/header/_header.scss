@@ -39,18 +39,21 @@
 }
 
 .header-logo {
-    margin: 1rem auto 1.5rem !important;
     font-size: 0;   // 1
-    margin: 0 remCalc($header-toggle-width); // 2
+    margin: spacing("base") auto spacing("single");
     text-align: center;
 
-    @include breakpoint("small") { // 4
-        margin-left: remCalc($header-toggle-width * 1.5);
-        margin-right: remCalc($header-toggle-width * 1.5);
+    @include breakpoint("xsmall") {
+      margin-top: 0;
+      margin-bottom: 0;
+    }
+
+    @include breakpoint("small") {
+      margin: spacing("base") auto spacing("single");
     }
 
     @include breakpoint("medium") {
-        margin: (spacing("double") + spacing("base")) auto (spacing("double") + spacing("single"));
+        margin: spacing("base") auto spacing("single");
         padding: 0;
 
         .header.fixed & {
@@ -126,9 +129,15 @@
     margin-right: auto;
     overflow: hidden;
     padding: remCalc(3px) 0;
-    text-overflow: ellipsis;
+    text-overflow: initial;
     text-transform: uppercase;
-    white-space: nowrap;
+    white-space: inherit;
+
+    @include breakpoint("xsmall") {
+      font-size: $fontSize-logo-small;
+      padding-bottom: 0;
+      padding-top: 0;
+    }
 
     @include breakpoint("small") {
         font-size: $fontSize-logo-medium;

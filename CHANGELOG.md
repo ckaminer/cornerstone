@@ -2,6 +2,11 @@
 
 ## Draft
 
+## ABC - 4.5.0.2 (2020-06-15)
+- Add new breakpoint for extra small screens (covers phones, not tablets)
+- Update header-logo-text styling to not cut off title text on smaller screens
+- Customize header-logo margins/padding for various device sizes
+
 ## ABC - 4.5.0.1 (2020-05-22)
 - Move search result content above the suggestion panel
 
